@@ -228,6 +228,16 @@ end
  
  
 def most_points_scored
-  
+  all_points = []
+  game_hash.each do |k,v|
+    v[:players].each do |player|
+      all_points << player[:points]
+    end
+  end
+  game_hash.each do |k, v|
+    v[:players].each do |player|
+      return player[:player_name] if player[:points]== all_points.max
+    end
+  end
 end
   
