@@ -227,7 +227,7 @@ x = 0
 end  
  
  
-def all_players
+def most_points_scored
   
 end
   
